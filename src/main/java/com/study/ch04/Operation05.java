@@ -51,6 +51,7 @@ public class Operation05 {
         String result = x == 0 || y == 0 ? "오류"
                 : (x > 0 ? (y > 0 ? "1사분면" : "4사분면")
                 : (y > 0 ? "2사분면" : "3사분면"));
+        System.out.println("테스트 코드 작성");
 
         /*
         String result2 = x == 0 || y == 0 ? "오류"
