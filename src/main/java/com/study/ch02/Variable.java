@@ -1,6 +1,6 @@
 package com.study.ch02;
 
-public class variable {
+public class Variable {
     public static void main(String[] args) {
         int date = 20231229; // -> 변수 date는 int라는 4byte 공간을 마련해라. 공간의 이름은 date로~
         // = 기호는 대입기호

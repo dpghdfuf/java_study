@@ -61,5 +61,21 @@ public class Operation05 {
                 : x > 0 && y < 0 ? "4사분면" : "";
 
          */
+
+        int a = 1;
+        int b = 1;
+
+        if(a == 0 || b==0) {
+            System.out.println("오류");
+        } else if(a > 0 && b > 0) {
+            System.out.println("1사분면");
+        }else if(a < 0 && b > 0) {
+            System.out.println("2사분면");
+        }else if(a < 0 && b < 0) {
+            System.out.println("3사분면");
+        }else {
+            System.out.println("4사분면");
+        }
+
     }
 }
