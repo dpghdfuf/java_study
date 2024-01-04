@@ -35,10 +35,12 @@ public class Menu {
                     }
                 }
             }
-            } else{
-                System.out.println("다시 입력하세요.");
+                    else{
+                        System.out.println("다시 입력하세요.");
+            }
         }
 
     }
 }
 // 보통 break보단 flag를 쓴다. */
+
