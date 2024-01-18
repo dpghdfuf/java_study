@@ -1,15 +1,16 @@
 package com.study.ch07.registor;
 
+
 import java.util.Scanner;
 
 public class ProductMain {
     public static void main(String[] args) {
-        ProductService productService = new ProductService();     // 메모리 할당. 중괄호 끝나면 끝남.+++
+        ProductService productService = new ProductService(); // 메모리 할당. 중괄호 끝나면 끝남.+++
 
         Scanner scanner = new Scanner(System.in);
         String productName = null;
         String productCode = null;
-        long productPrice = 0; // 정수 long // int 약 21억 정도
+        long productPrice = 0; // 정수 long // int는 약 21억 정도
 
 
         System.out.println("상품 등록 프로그램");
@@ -26,17 +27,18 @@ public class ProductMain {
             System.out.println("상품코드번호를 다시 입력하세요.");
             return;
         }
+
         System.out.print("가격>>> ");
         productPrice = scanner.nextLong();
 
-
-        Product product = new Product(productName, productCode, productPrice); 
-        
+        Product product = new Product(productName, productCode, productPrice);
         // 안 보고 ch07에다가 패키지에 5개 클래스 만들어서 해보기
 
         //productService.registerProductService(productName, productCode, productPrice);
         productService.registerProductService(product);
         // 호출을 했으면 다시 되돌아 와야한다
+
+        product = null;
     }
 }
 

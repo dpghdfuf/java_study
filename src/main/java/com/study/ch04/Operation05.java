@@ -1,4 +1,5 @@
 package com.study.ch04;
+// 조건연산자(삼항연산자)
 
 public class Operation05 {
     public static void main(String[] args) {

@@ -1,4 +1,5 @@
 package com.study.ch02;
+// 클래스
 
 public class Person {
     // 전달하는 그대로만 알기

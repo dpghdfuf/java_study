@@ -1,8 +1,8 @@
 package com.study.ch05;
+// 조건문
 
 public class If01 {
     public static void main(String[] args) {
-        // 조건문
 
         int i = 4;
 

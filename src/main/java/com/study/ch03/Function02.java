@@ -1,4 +1,5 @@
 package com.study.ch03;
+// 함수, 매개변수
 
 public class Function02 {
 
@@ -21,8 +22,8 @@ public class Function02 {
         System.out.println();
 
     }
-    // 매소드의 오버로딩 : 매소드명이 같지만 자료형이(매개변수가) 다르면 새로운 함수정의가 가능하다.(vs 오버라이딩 구분하기)
-    // 리턴 자료형이 다르다고 오버로딩이 되지 않는다. 오버로딩은 (함수명이 같고) 매개변수가 달라야한다.
+    // 매소드의 오버로딩 : 매소드(함수)명이 같지만, 매개변수의 자료형이 다르면 새로운 함수정의가 가능하다.(vs 오버라이딩 구분하기)
+    // 리턴 자료형이 다르다고 오버로딩이 되지 않는다. 오버로딩은 (함수명이 같고) 매개변수가(매개변수의 자료형이) 달라야한다.
     public static void fx02(String name, int age) {
         System.out.println("fx02 함수 실행");
         System.out.println("나이: " + age);

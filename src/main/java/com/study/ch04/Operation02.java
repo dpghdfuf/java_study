@@ -1,4 +1,5 @@
-package com.study.ch04; // 연산자
+package com.study.ch04;
+// 연산자
 
 public class Operation02 {
 
@@ -10,7 +11,7 @@ public class Operation02 {
 
          */
 
-        System.out.println(true);    // true, false 자체가 값? 이기 ㄸ대문에 큰 따옴표로 안 감쌌다
+        System.out.println(true);    // true, false 자체가 값? 이기 때문에 큰 따옴표로 안 감쌌다
         System.out.println(false);
 
         boolean flag = 10 > 2;

@@ -9,7 +9,6 @@ public class ProductDB {
         System.out.println("code: " + product.code);
         System.out.println("price: " + product.price);
         System.out.println();
-        //
         // main 메소드 리턴 자료형이 void면 return 사용가능
     }
 }

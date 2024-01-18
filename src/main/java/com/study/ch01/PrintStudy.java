@@ -1,4 +1,4 @@
-package com.study.ch01; //세미콜론 : 명령어의 끝인 걸 나타냄(중괄호로 끝나지 않는한 거의 부인다)
+package com.study.ch01; //세미콜론 : 명령어의 끝인 걸 나타냄(중괄호로 끝나지 않는한 거의 붙인다)
 
 public class PrintStudy { // 클래스명과 파일명은 같아야한다.
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class PrintStudy { // 클래스명과 파일명은 같아야한다.
         // 0000 0000 0부터 255까지
         // 맨 앞의 비트를 부호비트라 한다. 젤 앞의 숫자가 1이면 음수가 된다.
         /*
-        1바이트 8비트
+        1바이트는 8비트
          */
         // char자료형 -> 2바이트  한글자만 넣자고 약속
         System.out.println("\u0061"); // 유니코드 -> 여러 언어 지원
@@ -22,7 +22,7 @@ public class PrintStudy { // 클래스명과 파일명은 같아야한다.
         System.out.println("김"+"준"+"일");
 
         System.out.println("" + '김'+'준'+'일'); // 출력할때 +는 붙여주는 역할이다
-        // 순서가 중요 : 문자열이 문자를 만나서ㅓ 문자열화 했다.
+        // 순서가 중요 : 문자열이 문자를 만나서 문자열화 했다.
         // 자료형 중요 : 문자열 우선순위 높아서 더하면서 문자를 문자열로 변환
 
         System.out.println("나이: " + (10 + 20));

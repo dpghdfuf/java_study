@@ -1,4 +1,5 @@
 package com.study.ch02;
+// 업&다운 캐스팅, 상속
 
 public class StudentTypeMain {
     public static void main(String[] args) {
@@ -16,7 +17,7 @@ public class StudentTypeMain {
 
         int a = 10;
         double b = a;
-
+        ////m 현재 Person(name, age가 있다.)이 부모 클래스,  StudentType(name, age, grade, address가 있다.)이 자식 클래스
         //Person p = junil; -> p에는 person이 더 넓으니 student를 포함하고 있으니 업캐스팅 가능 // (Person이 부모 클래스 StudentType이 자식 클래스인 상태)
         //StudentType junil2 = (StudentType) p; // 다운캐스팅은 반드시 명시적 형 변환이 일어나야한다
         // 자료형의 포함 관계를 알고 있어야한다. 업*다운 캐스팅 알고 있어야한다.
@@ -36,7 +37,7 @@ public class StudentTypeMain {
         // person 이름(name)과 나이(age) 밖에 없음 변수명 p라 하면 (new했으니)  // (Person이 부모 클래스 StudentType이 자식 클래스인 상태)
         // StudentType 이름 나이 학년 주소
         /* p(person)을 student로 변환 했을 때 StudentType 로 X
-                Student를 person으로 했을 때 업캐스팅 됐다가 다운 캐스팅 괜찮다
+                student(Student클래스)를 person으로 했을 때 업캐스팅 됐다가 다운 캐스팅 괜찮다.
                 new는 메모리를 할당했을 때 쓰는것이다
 
          */

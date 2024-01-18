@@ -1,4 +1,5 @@
 package com.study.ch05;
+// scanner.nextLine();
 
 import java.util.Scanner;
 
@@ -38,7 +39,7 @@ public class UserInfoMain {
         grade = scanner.nextInt();
         System.out.print("주소를 입력하세요: ");
         scanner.nextLine();  // 버퍼 안에 있는 enter 날려주기
-        address = scanner.nextLine();  // nextLine이 온다면 그 전에 버퍼 안에 있는 enter를 날려준다. next나 nextInt
+        address = scanner.nextLine();  // nextLine이 온다면 그 전에 버퍼 안에 있는 enter를 날려준다. next나 nextInt 다음에 와서
 
         System.out.println("이름: "+ name);
         System.out.println("나이: "+ age);

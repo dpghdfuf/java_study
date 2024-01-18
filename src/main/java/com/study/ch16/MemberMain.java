@@ -1,8 +1,10 @@
 package com.study.ch16;
+
 import java.util.*;
-import java.util.Scanner;
+import java.lang.reflect.Array;
 
 public class MemberMain {
+
     private static ArrayList<Member> members = new ArrayList<>();
 
     public static String inputSearchName(String label) {
@@ -12,24 +14,19 @@ public class MemberMain {
     }
 
     public static Member findMemberByName(String name) {
-        // 바로 Member로 찾아갈 수 없으니 members로 주소 찾아감 하지만 귀찮으니 MemberMaind에
+        // 바로 Member로 찾아갈 수 없으니 members로 주소 찾아감 하지만 귀찮으니 MemberMain에
         // Main에 있던것을 MamberMain으로 올린다
-        for(Member member : members) {
-            if(member.getName().equals(name)) {
-                findMember = member;
-                break;
+        for (Member member : members) {
+            if (member.getName().equals(name)) {
+                return member;
             }
         }
+        return null;
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         String selectedMenu = null;
-
-        String name = null;
-        String address = null;
-
 
         while (true) {
             System.out.println("회원 관리 프로그램");
@@ -40,11 +37,9 @@ public class MemberMain {
             System.out.println("5. 회원 전체 조회");
             System.out.println("6. 회원 삭제");
             System.out.println("q. 프로그램 종료");
-
             selectedMenu = scanner.nextLine();
 
-
-            if ("q".equalsIgnoreCase(selectedMenu)) {
+            if ("q".equalsIgnoreCase(selectedMenu)) { // 대소문자 구분 X
                 break;
             } else if ("1".equals(selectedMenu)) {
                 /*
@@ -54,7 +49,7 @@ public class MemberMain {
                 << 등록이 완료되었습니다. >>
                  */
 
-
+                /* m 내가 한 1번 코드
                 for(int i = 0; i < members.size(); i++ ) {
                     System.out.println("[ 회원 등록하기 ]");
                     System.out.println("이름 >> ");
@@ -64,12 +59,20 @@ public class MemberMain {
                     address = scanner.nextLine();
                     System.out.print("주소 >> " + address);
                     System.out.println("<< 등록이 완료되었습니다. >>");
-                }
+                    }
+                */
+                String name = null;
+                String address = null;
 
-            //    Member member = new Member()
+                System.out.println("[ 회원 등록하기 ]");
+                System.out.print("이름 >> ");
+                name = scanner.nextLine();
+                System.out.print("주소 >> ");
+                address = scanner.nextLine();
 
-
-
+                Member member = new Member(name, address);
+                members.add(member);
+                System.out.println("<< 등록이 완료되었습니다. >>");
 
             } else if ("2".equals(selectedMenu)) {
                  /*
@@ -80,6 +83,7 @@ public class MemberMain {
                   */
                 System.out.println("[ 회원 이름 수정하기 ]");
                 String searchName = inputSearchName("수정 할 회원의 이름을 입력하세요");
+                Member findMember = findMemberByName(searchName);
             } else if ("3".equals(selectedMenu)) {
                   /*
                  [ 회원 주소 수정하기 ]
@@ -103,10 +107,10 @@ public class MemberMain {
                 // 전체 반복문 돌려야한다
                 Member findMember = null;
                 System.out.println();
-                    if(member.getName().equals(serarchName)) {
-                        findMember = member;
-                        break;
-                    }
+                 //   if(member.getName().equals(serarchName)) {
+                  //      findMember = member;
+                   //     break;
+                  //  }
                 if(findMember == null) {
                     System.out.println("해당 이름의 회원이 존재하지 않습니다.");
                     continue;
@@ -135,7 +139,7 @@ public class MemberMain {
                 << 삭제가 완료되었습니다. >>
                   */
 
-                members.remove(findMember); // 주소로 지우는 것 //객체를 바로 지우는 것?
+                //members.remove(findMember); // 주소로 지우는 것 //객체를 바로 지우는 것?
                 //members.remove(members.indexOf(findMember)); // 인덱스로 지우는 것
             } else {
                 System.out.println("다시 선택하세요.");

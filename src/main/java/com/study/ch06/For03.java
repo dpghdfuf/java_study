@@ -1,4 +1,5 @@
 package com.study.ch06;
+// 별 찍기
 
 import javax.sound.midi.SoundbankResource;
 import java.util.Scanner;

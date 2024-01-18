@@ -1,4 +1,5 @@
 package com.study.ch06;
+// 반복문 : for와 while
 
 public class For01 {
     public static void main(String[] args) {

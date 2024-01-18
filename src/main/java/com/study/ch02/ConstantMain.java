@@ -1,4 +1,5 @@
 package com.study.ch02;
+// 상수(final)
 
 public class ConstantMain {
     // "Constant = 일정한-> 상수"
@@ -7,7 +8,7 @@ public class ConstantMain {
         // 상수는 대문자로만 표기한다.
         // 최초로 한번만 대입이 가능하다
         // 무조건 초기화가 되어야 한다. 최초의 대입을 초기화라한다.
-        // 뱀처럼 연결된다고 해서 스네이크 표기법라 한다.
+        // 뱀처럼 연결된다고 해서 스네이크 표기법이라 한다.
         final String FILE_PATH = ""; // 상수는 언더바 사용하기
        // FILE_PATH = "d:/aws/project";
         //System.out
